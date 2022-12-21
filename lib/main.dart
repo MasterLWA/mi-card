@@ -11,12 +11,22 @@ class MyApp  extends StatelessWidget {
   Widget build(BuildContext context) {
     return  MaterialApp(
       home: Scaffold(
-
-       appBar:AppBar (
-         backgroundColor: Colors.blue,
-         title:Text('MasterLWA') ,
-       ),
-        body: Container(),
+        backgroundColor: Colors.cyan,
+      /*  appBar:AppBar (
+          backgroundColor: Colors.blue,
+          title:Text('MasterLWA') ,
+        ),*/
+        body: SafeArea(
+          child: Column(
+         //   crossAxisAlignment:CrossAxisAlignment.stretch,
+            children:<Widget> [
+              CircleAvatar(
+                radius: 100.0,
+                backgroundColor:Colors.red ,
+              )
+            ],
+          ),
+        ),
       ),
     );
   }
