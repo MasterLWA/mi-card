@@ -12,17 +12,17 @@ class MyApp  extends StatelessWidget {
     return  MaterialApp(
       home: Scaffold(
         backgroundColor: Colors.cyan,
-      /*  appBar:AppBar (
+       appBar:AppBar (
           backgroundColor: Colors.blue,
           title:Text('MasterLWA') ,
-        ),*/
+        ),
         body: SafeArea(
           child: Column(
          //   crossAxisAlignment:CrossAxisAlignment.stretch,
             children:<Widget> [
               CircleAvatar(
-                radius: 100.0,
-                backgroundColor:Colors.red ,
+                radius: 50.0,
+               backgroundImage: ('images/mypic.png'),
               )
             ],
           ),
